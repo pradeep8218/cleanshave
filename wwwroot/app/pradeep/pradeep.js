@@ -7,23 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var angular2_1 = require('angular2/angular2');
-var people_service_1 = require('./people.service');
-var People = (function () {
-    function People(_peopleService) {
-        var _this = this;
-        this._peopleService = _peopleService;
-        _peopleService.getPeople()
-            .subscribe(function (res) { return _this.people = res; });
+var ng = require('angular2/angular2');
+var pradeep = (function () {
+    function pradeep() {
     }
-    People = __decorate([
-        angular2_1.Component({
-            selector: 'people',
-            templateUrl: './app/people/people.html',
-            directives: [angular2_1.CORE_DIRECTIVES],
+    pradeep = __decorate([
+        ng.Component({
+            selector: 'pradeep',
+            templateUrl: './app/pradeep/pradeep.html'
         }), 
-        __metadata('design:paramtypes', [people_service_1.PeopleService])
-    ], People);
-    return People;
+        __metadata('design:paramtypes', [])
+    ], pradeep);
+    return pradeep;
 })();
-exports.People = People;
+exports.pradeep = pradeep;
